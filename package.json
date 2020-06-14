@@ -1,0 +1,16 @@
+{
+  "name": "stewardtoolapp",
+  "version": "1.0.0",
+  "description": "Steward Tool Development",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"npm run lite",
+    "lite": "lite-server"
+  },
+  "author": "Ron Neimark",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
