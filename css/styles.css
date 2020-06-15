@@ -11,8 +11,8 @@ header h1, h2 {
   background-image: linear-gradient(#E57492, white);
   padding: 20px 0; }
 
-.btn-social-icon {
-  margin-left:15px;
+/* .btn-social-icon {
+  margin-left:15px; */
 }
 
 .btn-light {
@@ -51,3 +51,8 @@ header h1, h2 {
 #loginModal .modal-header {
   background-color: #D31245;
   color: white; }
+
+#contractCoverThumb {
+  width: 70%;
+
+}
