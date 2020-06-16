@@ -56,3 +56,28 @@ header h1, h2 {
   width: 70%;
 
 }
+
+.tab-content {
+  border: 1px solid #DDD;
+  border-top: none;
+  padding: 10px;
+}
+
+/* .nav-link {
+  background-color: #D31245;
+  color: white;
+} */
+
+.nav-item a,
+.tab-content {
+  border: solid 1px #D31245;
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .nav-link.active:hover,.nav-pills .nav-link.active:focus{
+  background-color:#D31245;
+  color:white;
+  font-weight:550;
+
+  }
+
