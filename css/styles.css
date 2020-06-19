@@ -10,6 +10,7 @@ header h1, h2 {
 .site-footer {
   background-image: linear-gradient(#E57492, white);
   padding: 20px 0; }
+}
 
 /* .btn-social-icon {
   margin-left:15px; */
@@ -63,21 +64,22 @@ header h1, h2 {
   padding: 10px;
 }
 
-/* .nav-link {
-  background-color: #D31245;
-  color: white;
-} */
-
 .nav-item a,
 .tab-content {
   border: solid 1px #D31245;
 }
 
+.card {
+  border: solid 1px #D31245;
+}
 
 .nav-pills .nav-link.active, .nav-pills .nav-link.active:hover,.nav-pills .nav-link.active:focus{
   background-color:#D31245;
   color:white;
   font-weight:550;
+}
 
-  }
+hr.solid-red {
+  border:1px solid #D31245;
+}
 
