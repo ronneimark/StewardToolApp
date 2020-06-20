@@ -12,10 +12,6 @@ header h1, h2 {
   padding: 20px 0; }
 }
 
-/* .btn-social-icon {
-  margin-left:15px; */
-}
-
 .btn-light {
   color: #D31245;
 }
@@ -83,3 +79,7 @@ hr.solid-red {
   border:1px solid #D31245;
 }
 
+.btn {
+  background-color:#D31245;
+  color:white;
+}
