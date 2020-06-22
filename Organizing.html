@@ -101,17 +101,14 @@
     </div> 
 
     <div class="container container-fluid">
-        <div class="row mt-sm-5">
-            <div class="col ml-2">
+        <div class="row mt-sm-4 mb-sm-4">
+            <div class="col">
                 <h1><i>Organizing</i></h1>
             </div>
         </div>    
-        <div class="row row-content">
-            <div class="col-sm-1"></div>
-            <div class="col-12 col-sm-10">
-
+        <div class="row">
+            <div class="col-12">
                 <div id="accordion">
-
                     <div class="card">
                         <div role="tab" class="card-header">
                             <h4>
@@ -182,7 +179,7 @@
                             </h4>
                             <div class="collapse" id="communications" data-parent="#accordion">
                                 <div class="card-body">
-                                    <ul class="nav nav-pills red contract-tabs">
+                                    <ul class="nav nav-pills red organizing-tabs">
                                         <li class="nav-item">
                                             <a class="nav-link active" href="#survey" role="tab" data-toggle="tab">Survey</a>
                                         </li>
@@ -201,41 +198,189 @@
                                     </ul>
                                 
                                     <div class="tab-content">
-                                        <div role="tabpanel" class="tab-pane fade show active" id="text">
-                                            <h4><b>Request a Text Conversation</b></h4>
+                                        <div role="tabpanel" class="tab-pane fade show" id="text">
+                                            <h4><b>Set up a Text Conversation</b></h4>
                                             <p><i>If you would like to initiate a text conversation with a group of members in order to turn them out to an event or urge them to take an action, fill this out:</i></p>
-                                            <h4><b>Request a Blast SMS</b></h4>
-                                            <p><i>If you would like to send out a text message without engaging in a conversation, fill this out:</i></p>
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-12 col-md">
+                                                        <label for="textGroup"><b>Group to Text</b>:</label>
+                                                        <textarea class="form-control" id="textGroup" rows="5" placeholder="For instance, 'All members in the Emergency Department.'"></textarea>
+                                                    </div>
+                                                    <div class="form-group col-12 col-md">
+                                                        <label for="textPurpose"><b>Purpose:</b></label>
+                                                        <textarea class="form-control" id="meetingPurpose" rows="5" placeholder="For instance, 'To secure commitments to attend an action to oppose the employer's new staffing grid.'"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row form-inline mb-2">
+                                                    <div class="form-group">
+                                                        <label for="textingDate" class="mr-2"><b>Date to start texting:</b></label>
+                                                        <input type="date" id="textingDate" name="textingDate">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col">
+                                                        <label for="textInitialMessage"><b>Initial Message:</b></label>
+                                                        <textarea class="form-control" id="textInitialMessage" rows="3" placeholder="Hi {first name}, this is {texter's name}.  On Tuesday at 2, we are going to deliver our petition to management against the new staffing grid.  Can we count on you to be there?"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col">
+                                                        <label for="textFollowUpMessage"><b>Follow Up Message:</b></label>
+                                                        <textarea class="form-control" id="textFollowUpMessage" rows="3" placeholder="Great. We will be meeting at 1:45 in the lobby and moving from there to the office.  See you then!"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col">
+                                                        <label for="textTracking"><b>Information to Track:</b></label>
+                                                        <textarea class="form-control" id="textTracking" rows="3" placeholder="For instance: Did member commit to attend the action?  Yes-Maybe-No..."></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn mt-2 mb-3">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane fade" id="email">
-                                            <h4><b>Request an Email</b></h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel felis elit. Nulla non luctus magna, a blandit risus. Duis ac magna et massa mattis blandit sit amet sed justo. Fusce fringilla dolor vel lectus bibendum, a pharetra mauris varius. Suspendisse sodales mi vitae risus dignissim, porttitor elementum mauris rhoncus. Nunc porta eros elit, et accumsan nisl porta a. Sed efficitur quis enim varius venenatis. Nunc dignissim placerat ornare. Vestibulum justo velit, faucibus quis finibus sit amet, porttitor a mi. Donec sed tincidunt velit. Pellentesque dictum finibus posuere. Sed aliquam cursus eros non accumsan. Suspendisse vel porttitor enim. Donec eu nisl dui. Aliquam mi felis, pulvinar ut egestas ac, dignissim in quam.</p>
+                                        <div role="tabpanel" class="tab-pane fade show" id="email">
+                                            <h4><b>Send an Email</b></h4>
+                                                <h5>To your Unit/Department</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel felis elit. Nulla non luctus magna, a blandit risus.</p>
+                                                <h5>To MNA United Chairs</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel felis elit. Nulla non luctus magna, a blandit risus.</p>
+                                                <h5>To MNA United Steward Group</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel felis elit. Nulla non luctus magna, a blandit risus.</p>
+                                            </div>
+                                        <div role="tabpanel" class="tab-pane fade show" id="zoom">
+                                            <h4><b>Organize a Video Meeting</b></h4>
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-12 col-md">
+                                                        <label for="meetingGroup"><b>Group to Invite</b>:</label>
+                                                        <textarea class="form-control" id="meetingGroup" rows="5" placeholder="For instance, 'All members in the Emergency Department.'"></textarea>
+                                                    </div>
+                                                    <div class="form-group col-12 col-md">
+                                                        <label for="meetingPurpose"><b>Purpose of meeting:</b></label>
+                                                        <textarea class="form-control" id="meetingPurpose" rows="5" placeholder="For instance, 'To talk about our plans to respond to the employer's proposed new staffing grid.'"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row form-inline mb-2">
+                                                    <div class="form-group">
+                                                        <label for="meetingDate" class="mr-2"><b>Meeting Date and Time:</b></label>
+                                                        <input type="date" id="meetingDate" name="meetingDate">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="meetingStart" class="ml-2 mr-2"><b>from</b></label>
+                                                        <input type="time" min="00:00" value="06:00" step="900" id="meetingStart" name="meetingStart">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="meetingEnd" class="ml-2 mr-2"><b>to</b></label>
+                                                        <input type="time" min="00:00" value="06:00" step="900" id="meetingEnd" name="meetingEnd">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row form-inline mb-2">
+                                                    <div class="mr-3">
+                                                        <b>Invitations:</b>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="meetingInviteText" value="Text Invite">
+                                                        <label class="form-check-label" for="meetingInviteText">Text</label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="meetingInviteEmail" value="Email Invite">
+                                                        <label class="form-check-label" for="meetingInviteEmail">E-Mail</label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="meetingInvitePhone" value="Phone Invite">
+                                                        <label class="form-check-label" for="meetingInvitePhone">Phone</label>
+                                                      </div>
+                                                </div>
+                                                <div class="form-row form-inline mb-2">
+                                                    <div class="mr-3">
+                                                        <b>Organizational Support Requested:</b>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="meetingSupportChair" value="Request Chair Suport">
+                                                        <label class="form-check-label" for="meetingSupportChair">MNA Chair(s)</label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="meetingSupportStaff" value="Request MNA Staff Support">
+                                                        <label class="form-check-label" for="meetingSupportStaff">MNA Staff</label>
+                                                      </div>
+                                                </div>
+                                                <div class="form-row form-group">
+                                                    <div class="mr-3">
+                                                        <b>Do you intend to share a video with sound?</b>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="meetingVideo" id="meetingVideo" value="meetingVideoSound">
+                                                        <label class="form-check-label" for="meetingVideo">
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="meetingVideo" id="meetingVideo" value="meetingVideoNoSound" checked>
+                                                        <label class="form-check-label" for="meetingVideo">
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn mt-3">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane fade" id="zoom">
-                                            <h4><b>Request a Zoom Meeting</b></h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel felis elit. Nulla non luctus magna, a blandit risus. Duis ac magna et massa mattis blandit sit amet sed justo. Fusce fringilla dolor vel lectus bibendum, a pharetra mauris varius. Suspendisse sodales mi vitae risus dignissim, porttitor elementum mauris rhoncus. Nunc porta eros elit, et accumsan nisl porta a. Sed efficitur quis enim varius venenatis. Nunc dignissim placerat ornare. Vestibulum justo velit, faucibus quis finibus sit amet, porttitor a mi. Donec sed tincidunt velit. Pellentesque dictum finibus posuere. Sed aliquam cursus eros non accumsan. Suspendisse vel porttitor enim. Donec eu nisl dui. Aliquam mi felis, pulvinar ut egestas ac, dignissim in quam.</p>
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane fade" id="social">
+                                        <div role="tabpanel" class="tab-pane fade show" id="social">
                                             <h4><b>Our Social Media Sites</b></h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel felis elit. Nulla non luctus magna, a blandit risus. Duis ac magna et massa mattis blandit sit amet sed justo. Fusce fringilla dolor vel lectus bibendum, a pharetra mauris varius. Suspendisse sodales mi vitae risus dignissim, porttitor elementum mauris rhoncus. Nunc porta eros elit, et accumsan nisl porta a. Sed efficitur quis enim varius venenatis. Nunc dignissim placerat ornare. Vestibulum justo velit, faucibus quis finibus sit amet, porttitor a mi. Donec sed tincidunt velit. Pellentesque dictum finibus posuere. Sed aliquam cursus eros non accumsan. Suspendisse vel porttitor enim. Donec eu nisl dui. Aliquam mi felis, pulvinar ut egestas ac, dignissim in quam.</p>
+                                            <div>
+                                                <div class="pt-3">
+                                                    <h5>MNA-United Bargaining Unit Sites</h5>
+                                                    <a class="btn btn-social-icon btn-facebook ml-3" href="https://www.facebook.com/groups/1641519252735119"><i class="fa fa-facebook"></i></a>
+                                                    <a class="btn btn-social-icon btn-slack ml-3" href="https://app.slack.com/client/TVAQRCADA/CVDEXGJ06"><i class="fa fa-slack"></i></i></a>
+                                                        
+                                                </div>
+                                                <div class="pt-3">
+                                                    <h5>MNA Sites</h5>
+                                                    <a class="btn btn-social-icon btn-facebook ml-3" href="https://www.facebook.com/MinnesotaNurses"><i class="fa fa-facebook"></i></a>
+                                                    <a class="btn btn-social-icon btn-twitter ml-3" href="https://twitter.com/mnnurses"><i class="fa fa-twitter"></i></a>
+                                                    <a class="btn btn-social-icon btn-youtube ml-3" href="https://www.youtube.com/user/mnnurses"><i class="fa fa-youtube"></i></a>
+                                                    <a class="ml-3" href="https://mnnurses.org/">MNA Website</a>
+                                                </div>
+                                                <div class="pt-3">
+                                                    <h5>MNA Metro Stewards</h5>
+                                                    <a class="btn btn-social-icon btn-facebook ml-3" href="https://www.facebook.com/groups/560002807965269"><i class="fa fa-facebook"></i></a>  
+                                                </div>
+                                                <div class="pt-3">
+                                                    <h5>NNU Sites</h5>
+                                                    <a class="btn btn-social-icon btn-facebook ml-3" href="https://www.facebook.com/nationalnurses/"><i class="fa fa-facebook"></i></a>
+                                                    <a class="btn btn-social-icon btn-twitter ml-3" href="https://twitter.com/nationalnurses?lang=en"><i class="fa fa-twitter"></i></a>
+                                                    <a class="btn btn-social-icon btn-vimeo ml-3" href="https://vimeo.com/nationalnursesunited"><i class="fa fa-vimeo"></i></a>
+                                                    <a class="btn btn-social-icon btn-flickr ml-3" href="https://www.flickr.com/photos/nationalnursesunited/"><i class="fa fa-flickr"></i></a>
+                                                    <a class="ml-3" href="https://www.nationalnursesunited.org/">NNU Website</a> 
+                                                </div>                                               
+                                            </div>   
                                         </div>
-                                        <div role="tabpanel" class="tab-pane fade" id="survey">
-                                            <h4><b>Survey Request</b></h4>
+                                        
+                                        <div role="tabpanel" class="tab-pane fade show active" id="survey">
+                                            <h4><b>Set up a Survey</b></h4>
                                             <p><i><b>Fill out this form to request a survey of your co-workers. MNA staff will reach out to you to work out additional details.</b></i></p>
                                             <form>
                                                 <div class="form-row">
-                                                    <div class="form-group col">
+                                                    <div class="form-group col-12 col-md">
                                                         <label for="SurveyGroup"><b>Group Surveying</b>:</label>
                                                         <textarea class="form-control" id="SurveyGroup" rows="5" placeholder="For instance, 'All members in the Emergency Department.'"></textarea>
                                                     </div>
-                                                    <div class="form-group col">
+                                                    <div class="form-group col-12 col-md">
                                                         <label for="SurveyPurpose"><b>Survey Purpose:</b></label>
                                                         <textarea class="form-control" id="SurveyPurpose" rows="5" placeholder="For instance, 'To find out what the nurses in the department think about the employer's proposed new staffing grid.'"></textarea>
                                                     </div>
                                                 </div>
                                                 <div class="form-row form-inline mb-2">
                                                     <div class="form-group">
-                                                        <label for="surveyStart" class="mr-2"><b>Run survey from:</b></label>
+                                                        <label for="surveyStart" class="mr-2"><b>Run survey from</b></label>
                                                         <input type="date" id="surveyStart" name="surveyStart">
                                                     </div>
                                                     <div class="form-group">
@@ -243,14 +388,15 @@
                                                         <input type="date" id="surveyEnd" name="surveyEnd">
                                                     </div>
                                                 </div>
+                                                <p><i><b>Please give us 7 days to set up a survey</b></i></p>
                                                 <div class="form-row">
                                                     <div class="column">
                                                        <p><b>First Five Questions: </b><i>Use multiple choice to normalize answer and track statistics.  Use open-ended to give people the chance to tell you their thoughts.</i></p>
                                                     </div> 
                                                 </div>
                                                 <div class="form-row form-group">
-                                                    <div class="col">
-                                                        <input type="text" class="form-control col" id="surveyQuestion1" placeholder="Survey Question 1">
+                                                    <div class="col-12 col-md">
+                                                        <input type="text" class="form-control" id="surveyQuestion1" placeholder="Survey Question 1">
                                                     </div>
                                                     <div class="form-check form-check-inline">
                                                         <input class="form-check-input" type="radio" name="q1Radios" id="q1Radios" value="multipleChoice" checked>
@@ -266,8 +412,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-row form-group">
-                                                    <div class="col">
-                                                        <input type="text" class="form-control col" id="surveyQuestion2" placeholder="Survey Question 2">
+                                                    <div class="col-12 col-md">
+                                                        <input type="text" class="form-control" id="surveyQuestion2" placeholder="Survey Question 2">
                                                     </div>
                                                     <div class="form-check form-check-inline">
                                                         <input class="form-check-input" type="radio" name="q2Radios" id="q2Radios" value="multipleChoice" checked>
@@ -283,8 +429,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-row form-group">
-                                                    <div class="col">
-                                                        <input type="text" class="form-control col" id="surveyQuestion3" placeholder="Survey Question 3">
+                                                    <div class="col-12 col-md">
+                                                        <input type="text" class="form-control" id="surveyQuestion3" placeholder="Survey Question 3">
                                                     </div>
                                                     <div class="form-check form-check-inline">
                                                         <input class="form-check-input" type="radio" name="q3Radios" id="q3Radios" value="multipleChoice" checked>
@@ -300,8 +446,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-row form-group">
-                                                    <div class="col">
-                                                        <input type="text" class="form-control col" id="surveyQuestion34" placeholder="Survey Question 4">
+                                                    <div class="col-12 col-md">
+                                                        <input type="text" class="form-control" id="surveyQuestion34" placeholder="Survey Question 4">
                                                     </div>
                                                     <div class="form-check form-check-inline">
                                                         <input class="form-check-input" type="radio" name="q4Radios" id="q4Radios" value="multipleChoice" checked>
@@ -317,8 +463,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-row form-group">
-                                                    <div class="col">
-                                                        <input type="text" class="form-control col" id="surveyQuestion5" placeholder="Survey Question 5">
+                                                    <div class="col-12 col-md">
+                                                        <input type="text" class="form-control" id="surveyQuestion5" placeholder="Survey Question 5">
                                                     </div>
                                                     <div class="form-check form-check-inline">
                                                         <input class="form-check-input" type="radio" name="q5Radios" id="q5Radios" value="multipleChoice" checked>
@@ -351,7 +497,7 @@
     </div>
 
     
-    <footer class="site-footer">  
+    <footer class="site-footer mt-sm-4">  
         <div class="container">
             <div class="row">
                 <div class="col-6 col-sm-6">
